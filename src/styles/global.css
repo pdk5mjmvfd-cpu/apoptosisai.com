@@ -12,6 +12,35 @@ body {
 
 .flux-ring {
   @apply relative w-96 h-96 border-4 border-prime-gold rounded-full flex items-center justify-center;
+  animation: flux-rotate 20s linear infinite;
+}
+
+@keyframes flux-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hero {
+  @apply relative min-h-screen flex items-center justify-center overflow-hidden;
+  background-image: url('/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 26, 51, 0.9), rgba(0, 0, 0, 0.95));
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .stem { @apply absolute top-8 left-8 text-prime-gold font-bold text-2xl; }

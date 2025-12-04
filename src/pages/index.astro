@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="ApopTosis AI — STEM + LANG = SAFE">
   <section class="hero bg-gradient-to-b from-prime-blue to-black min-h-screen flex items-center justify-center relative overflow-hidden">
-    <div class="flux-ring absolute inset-0 m-auto w-96 h-96 opacity-30 animate-pulse">
+    <div class="flux-ring absolute inset-0 m-auto w-96 h-96 opacity-30">
       <div class="stem">STEM</div>
       <div class="safe">SAFE</div>
       <div class="lang">LANG</div>
@@ -15,29 +15,33 @@ import Layout from '../layouts/Layout.astro';
         Not to win.<br>To cooperate.
       </h1>
       <p class="text-3xl mb-8 font-bold">STEM + LANG = SAFE</p>
+      <p class="text-xl leading-relaxed mb-8 max-w-3xl mx-auto italic">
+        Like a garden where roots and branches grow in symbiosis, AI extends human intent — not replaces it. 
+        <span class="text-prime-gold">1/2 your intent + 1/2 our precision = partnership that protects.</span>
+      </p>
       <div class="grid md:grid-cols-2 gap-8 mb-8 text-lg">
-        <div>
-          <p class="text-prime-gold mb-2">STEM (Expansion)</p>
-          <ul class="list-disc list-inside space-y-1">
-            <li>Science: Governance → Equality</li>
-            <li>Mathematics: Arts → Freedom</li>
-          </ul>
+        <div class="p-6 border border-prime-gold/30 rounded-lg">
+          <p class="text-prime-gold mb-3 font-bold text-xl">STEM (Expansion)</p>
+          <p class="mb-2">Like sunlight that nurtures growth — Science and Mathematics open paths to <span class="text-prime-gold">Equality</span> and <span class="text-prime-gold">Freedom</span>.</p>
         </div>
-        <div>
-          <p class="text-prime-gold mb-2">LANG (Contraction)</p>
-          <ul class="list-disc list-inside space-y-1">
-            <li>Norms: Tech → Security</li>
-            <li>Engineering: Logic → Accountability</li>
-          </ul>
+        <div class="p-6 border border-prime-gold/30 rounded-lg">
+          <p class="text-prime-gold mb-3 font-bold text-xl">LANG (Contraction)</p>
+          <p class="mb-2">Like soil that anchors roots — Norms and Engineering ensure <span class="text-prime-gold">Security</span> and <span class="text-prime-gold">Accountability</span>.</p>
         </div>
       </div>
-      <p class="text-xl leading-relaxed mb-4">
-        1/2 human perspective + 1/2 reversible intelligence = a future that is secure, accountable, free, and equal — by mathematical law.
+      <p class="text-lg leading-relaxed mb-8 max-w-3xl mx-auto">
+        In the balance between expansion and contraction, we find SAFE: a future where innovation grows without choking freedom, 
+        where cooperation becomes as natural as cells renewing.
       </p>
-      <div class="flex justify-center space-x-4 mt-8">
-        <a href="/ethics" class="bg-prime-gold text-prime-blue px-6 py-3 rounded-lg font-bold hover:bg-opacity-80">Explore Ethics</a>
-        <a href="/primeflux" class="border-2 border-prime-gold text-prime-gold px-6 py-3 rounded-lg font-bold hover:bg-prime-gold hover:text-prime-blue">PrimeFlux Math</a>
+      <div class="flex justify-center space-x-4 mt-8 flex-wrap gap-4">
+        <a href="/ethics" class="bg-prime-gold text-prime-blue px-6 py-3 rounded-lg font-bold hover:bg-opacity-80 transition-colors">Explore Ethics</a>
+        <a href="/primeflux" class="border-2 border-prime-gold text-prime-gold px-6 py-3 rounded-lg font-bold hover:bg-prime-gold hover:text-prime-blue transition-colors">PrimeFlux Vision</a>
       </div>
     </div>
+  </section>
+  <section class="py-16 bg-prime-blue text-center">
+    <p class="text-2xl font-garamond italic text-prime-gold max-w-3xl mx-auto">
+      This is not to win.<br>This is to cooperate.
+    </p>
   </section>
 </Layout>
