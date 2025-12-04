@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>{title}</title>
+  </head>
+  <body>
+    <nav class="bg-prime-blue/90 backdrop-blur sticky top-0 z-50 border-b border-prime-gold/20">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4">
+        <a href="/" class="text-prime-gold font-bold text-2xl mb-4 md:mb-0">ApopTosis AI</a>
+        <ul class="flex flex-wrap justify-center gap-4 md:gap-8 text-safe-white text-sm md:text-base">
+          <li><a href="/" class="hover:text-prime-gold transition-colors">Home</a></li>
+          <li><a href="/primeflux" class="hover:text-prime-gold transition-colors">PrimeFlux</a></li>
+          <li><a href="/primeflux-ai" class="hover:text-prime-gold transition-colors">PrimeFlux-Ai</a></li>
+          <li><a href="/quantacoin" class="hover:text-prime-gold transition-colors">QuantaCoin</a></li>
+          <li><a href="/agora" class="hover:text-prime-gold transition-colors">Agora</a></li>
+          <li><a href="/ethics" class="hover:text-prime-gold transition-colors">Ethics</a></li>
+          <li><a href="/business" class="hover:text-prime-gold transition-colors">Business</a></li>
+          <li><a href="/contact" class="hover:text-prime-gold transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <slot />
+    <footer class="bg-prime-blue border-t border-prime-gold/30 py-8 text-center">
+      <p class="text-safe-white">&copy; 2025 ApopTosis AI LLC · STEM + LANG = SAFE</p>
+    </footer>
+  </body>
+</html>
+

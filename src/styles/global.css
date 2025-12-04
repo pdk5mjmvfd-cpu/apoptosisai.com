@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-prime-blue text-safe-white font-inter;
+}
+
+.hero {
+  @apply relative min-h-screen flex items-center justify-center overflow-hidden;
+}
+
+.flux-ring {
+  @apply relative w-96 h-96 border-4 border-prime-gold rounded-full flex items-center justify-center;
+}
+
+.stem { @apply absolute top-8 left-8 text-prime-gold font-bold text-2xl; }
+.lang { @apply absolute bottom-8 right-8 text-prime-gold font-bold text-2xl; }
+.safe { @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-bold text-white; }
+.center-symbol { @apply text-6xl; }
+
